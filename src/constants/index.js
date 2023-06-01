@@ -1,7 +1,5 @@
 import {
-  mobile,
   backend,
-  creator,
   web,
   javascript,
   typescript,
@@ -15,14 +13,17 @@ import {
   git,
   figma,
   docker,
-  meta,
   terrazas,
   tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
+  nabem,
+  bookings,
+  nabemimage,
+  censu,
+  datamining,
   threejs,
+  next,
+  java,
+  vue,
 } from "../assets";
 
 export const navLinks = [
@@ -74,8 +75,8 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Next",
+    icon: next,
   },
   {
     name: "Tailwind CSS",
@@ -86,78 +87,41 @@ const technologies = [
     icon: nodejs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
+    name: "Java",
+    icon: java,
   },
   {
     name: "git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
+    name: "Vue",
+    icon: vue,
   },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: terrazas,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
     title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    company_name: "Complejo Turístico Las Terrazas",
+    icon: terrazas,
+    iconBg: "#E6DEDD",
+    date: "Dec 2020 - Jan 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing and maintaining web applications using Vue.js and other related technologies.",
+      "Development of various API REST using Node.js and Express.",
+      "Maintenance and backup of real databases with Microsoft SQL Server",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    title: "Full Stack Developer",
+    company_name: "Nabem Company",
+    icon: nabem,
+    iconBg: "#383E56",
+    date: "Feb 2023 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Back-end development using Spring Boot and other related technologies.",
     ],
   },
 ];
@@ -191,67 +155,84 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Web DataMining",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web application that allows you to apply data mining algorithms to the registration of educational course events in the Moodle platform to obtain learning patterns.",
     tags: [
       {
-        name: "react",
+        name: "Java",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "JSF",
         color: "green-text-gradient",
       },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
     ],
-    image: carrent,
+    image: datamining,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "Censo",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web application for the administration of personal and statistical data in the population of the terraces.",
     tags: [
       {
-        name: "react",
+        name: "Vue 2.0",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Vuetify",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Node",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: censu,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Reservas",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Web system for the management of booking excursions of the Las Terrazas complex.",
     tags: [
       {
-        name: "nextjs",
+        name: "Vue 3.0",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Vuetify",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Node",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: bookings,
     source_code_link: "https://github.com/",
+  },
+  {
+    name: "Nabem Company",
+    description: "Online store for the sale of products in Cuba",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Next",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: nabemimage,
+    source_code_link: "https://github.com/",
+    html_link: "https://github.com/",
   },
 ];
 

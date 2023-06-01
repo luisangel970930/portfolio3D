@@ -48,10 +48,10 @@ const About = () => {
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
         I'm a full-stack developer with a experience in Java and JavaScript, and
-        skills with frameworks like React, Next.js, and Spring Boot. I consider
-        myself a responsible and committed professional both in my work and in
-        my life, with the ability to learn new technologies, work as a team and
-        face new challenges.
+        skills with frameworks like React, Next and Node. I consider myself a
+        responsible and committed professional both in my work and in my life,
+        with the ability to learn new technologies, work as a team and face new
+        challenges.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
