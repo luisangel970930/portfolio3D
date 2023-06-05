@@ -35,13 +35,7 @@ const Contact = () => {
       .send(
         "service_zzspttp",
         "template_2xyl8qp",
-        {
-          from_name: form.name,
-          to_name: "Luis Angel",
-          from_email: form.email,
-          to_email: "luisangel970930@gmail.com",
-          message: form.message,
-        },
+        formRef.current,
         "EhL7ALdCFAShkR2wx"
       )
       .then(
