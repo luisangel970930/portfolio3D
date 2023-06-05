@@ -10,8 +10,8 @@ import { slideIn } from "../utils/motion";
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
-    name: "",
-    email: "",
+    user_name: "",
+    user_email: "",
     message: "",
   });
 
@@ -35,7 +35,11 @@ const Contact = () => {
       .send(
         "service_zzspttp",
         "template_2xyl8qp",
-        formRef.current,
+        {
+          to_name: form.user_name,
+          from_name: form.user_email,
+          message: form.message,
+        },
         "EhL7ALdCFAShkR2wx"
       )
       .then(
@@ -44,8 +48,8 @@ const Contact = () => {
           alert("Thank you. I will get back to you as soon as possible.");
 
           setForm({
-            name: "",
-            email: "",
+            user_name: "",
+            user_email: "",
             message: "",
           });
         },
@@ -71,6 +75,7 @@ const Contact = () => {
 
         <form
           ref={formRef}
+          id="form"
           onSubmit={handleSubmit}
           className="mt-12 flex flex-col gap-8"
         >
@@ -78,8 +83,9 @@ const Contact = () => {
             <span className="text-white font-medium mb-4">Your Name</span>
             <input
               type="text"
-              name="name"
-              value={form.name}
+              name="user_name"
+              id="name"
+              value={form.user_name}
               onChange={handleChange}
               placeholder="What's your good name?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
@@ -89,8 +95,9 @@ const Contact = () => {
             <span className="text-white font-medium mb-4">Your email</span>
             <input
               type="email"
-              name="email"
-              value={form.email}
+              name="user_email"
+              id="email"
+              value={form.user_email}
               onChange={handleChange}
               placeholder="What's your web address?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
@@ -101,6 +108,7 @@ const Contact = () => {
             <textarea
               rows={7}
               name="message"
+              id="message"
               value={form.message}
               onChange={handleChange}
               placeholder="What you want to say?"
