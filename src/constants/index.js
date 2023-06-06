@@ -232,7 +232,7 @@ const projects = [
     ],
     image: nabemimage,
     source_code_link: "https://github.com/",
-    html_link: "https://github.com/",
+    html_link: "https://nabem.vercel.app/",
   },
 ];
 
