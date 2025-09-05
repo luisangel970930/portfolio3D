@@ -23,6 +23,9 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import next from "./tech/next.png";
 import java from "./tech/java.png";
+import aws from "./tech/aws.png";
+import PostgreSQL from "./tech/PostgreSQL.png";
+import python from "./tech/python.png";
 import vue from "./tech/vue.png";
 
 import meta from "./company/meta.png";
@@ -30,6 +33,7 @@ import shopify from "./company/shopify.png";
 import terrazas from "./company/terrazas.png";
 import tesla from "./company/tesla.png";
 import nabem from "./company/nabem.png";
+import datamart from "./company/Datamart_LOGO.png";
 
 import datamining from "./datamining.jpg";
 import censu from "./censo.jpg";
@@ -37,6 +41,9 @@ import nabemimage from "./nabem.jpg";
 import bookings from "./reservas.jpg";
 
 export {
+  aws,
+  PostgreSQL,
+  python,
   logo,
   backend,
   creator,
@@ -71,4 +78,5 @@ export {
   java,
   vue,
   htmllink,
+  datamart,
 };

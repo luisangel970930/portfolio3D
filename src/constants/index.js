@@ -24,6 +24,10 @@ import {
   next,
   java,
   vue,
+  PostgreSQL,
+  aws,
+  python,
+  datamart,
 } from "../assets";
 
 export const navLinks = [
@@ -95,8 +99,16 @@ const technologies = [
     icon: git,
   },
   {
-    name: "Vue",
-    icon: vue,
+    name: "AWS",
+    icon: aws,
+  },
+  {
+    name: "PostgreSQL",
+    icon: PostgreSQL,
+  },
+  {
+    name: "python",
+    icon: python,
   },
 ];
 
@@ -118,10 +130,24 @@ const experiences = [
     company_name: "Nabem Company",
     icon: nabem,
     iconBg: "#383E56",
-    date: "Feb 2023 - Present",
+    date: "Feb 2023 - Jul 2023",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Back-end development using Spring Boot and other related technologies.",
+    ],
+  },
+  {
+    title: "Front-End Developer",
+    company_name: "Datamart",
+    icon: datamart,
+    iconBg: "#ffffffff",
+    date: "Jul 2023 - Present",
+    points: [
+      "Implemented state machines using XState to manage complex workflows.",
+      "Integrated multiple AWS services, including Step Functions, CloudWatch for monitoring, CodeCommit, among others.",
+      "Developed SPA web applications using React as the primary framework, applying design patterns and best practices.",
+      "Built and maintained reusable UI/UX component systems to optimize user experience.",
+      "Contributed to code automation projects, reducing development time and improving team efficiency.",
     ],
   },
 ];
